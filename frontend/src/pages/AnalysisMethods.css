@@ -1,0 +1,86 @@
+.methods-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.method-card {
+  cursor: pointer;
+  border-left: 4px solid transparent;
+}
+
+.method-card:hover {
+  border-left-color: var(--primary);
+}
+
+.method-card-active {
+  border-left-color: var(--primary) !important;
+  box-shadow: var(--shadow-md);
+}
+
+.method-header {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.method-header .card-icon {
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+.method-short {
+  margin-top: 0.25rem;
+}
+
+.method-details {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.method-details > p {
+  margin-bottom: 1.25rem;
+  line-height: 1.7;
+}
+
+.method-params,
+.method-citations {
+  margin-bottom: 1rem;
+}
+
+.method-params h4,
+.method-citations h4 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.method-params ul,
+.method-citations ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.method-params li {
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.method-citations li {
+  color: var(--text-light);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.method-citations li::before {
+  content: "📄 ";
+}
